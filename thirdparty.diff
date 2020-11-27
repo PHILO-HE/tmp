@@ -1,0 +1,479 @@
+diff --git a/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/SyncTaskStats.java b/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/SyncTaskStats.java
+index 6c80eb5..c2f49fa 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/SyncTaskStats.java
++++ b/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocol/SyncTaskStats.java
+@@ -16,9 +16,9 @@
+  */
+ package org.apache.hadoop.hdfs.protocol;
+ 
+-import com.google.common.annotations.VisibleForTesting;
+-import com.google.common.collect.Maps;
+-import com.google.common.collect.Sets;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Maps;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Sets;
+ import org.apache.hadoop.hdfs.server.protocol.BlockSyncTaskExecutionFeedback;
+ import org.apache.hadoop.hdfs.server.protocol.MetadataSyncTaskExecutionFeedback;
+ import org.apache.hadoop.hdfs.server.protocol.SyncTaskExecutionOutcome;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/ProvidedVolumeInfo.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/ProvidedVolumeInfo.java
+index d81df2b..5ab650a 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/ProvidedVolumeInfo.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/ProvidedVolumeInfo.java
+@@ -17,7 +17,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.common;
+ 
+-import com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ import org.apache.hadoop.fs.MountMode;
+ 
+ import java.util.Collections;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/blockaliasmap/impl/LevelDBFileRegionAliasMap.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/blockaliasmap/impl/LevelDBFileRegionAliasMap.java
+index 7398572..bb05a5c 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/blockaliasmap/impl/LevelDBFileRegionAliasMap.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/common/blockaliasmap/impl/LevelDBFileRegionAliasMap.java
+@@ -26,7 +26,7 @@
+ 
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.classification.InterfaceStability;
+-import com.google.common.primitives.Longs;
++import org.apache.hadoop.thirdparty.com.google.common.primitives.Longs;
+ import org.apache.hadoop.hdfs.protocol.Block;
+ import org.iq80.leveldb.DB;
+ import org.iq80.leveldb.DBIterator;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/FsDatasetImpl.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/FsDatasetImpl.java
+index 16d24c0..6470007 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/FsDatasetImpl.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/FsDatasetImpl.java
+@@ -50,7 +50,7 @@
+ 
+ import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ 
+-import com.google.common.util.concurrent.ThreadFactoryBuilder;
++import org.apache.hadoop.thirdparty.com.google.common.util.concurrent.ThreadFactoryBuilder;
+ import org.apache.hadoop.HadoopIllegalArgumentException;
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.conf.Configuration;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ProvidedVolumeReplicaMap.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ProvidedVolumeReplicaMap.java
+index 8dd39bd..9829042 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ProvidedVolumeReplicaMap.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ProvidedVolumeReplicaMap.java
+@@ -24,9 +24,9 @@
+ import java.util.Optional;
+ import java.util.concurrent.ExecutionException;
+ 
+-import com.google.common.cache.CacheBuilder;
+-import com.google.common.cache.CacheLoader;
+-import com.google.common.cache.LoadingCache;
++import org.apache.hadoop.thirdparty.com.google.common.cache.CacheBuilder;
++import org.apache.hadoop.thirdparty.com.google.common.cache.CacheLoader;
++import org.apache.hadoop.thirdparty.com.google.common.cache.LoadingCache;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.FileSystem;
+ import org.apache.hadoop.hdfs.protocol.Block;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ReplicaMap.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ReplicaMap.java
+index a267f14..78c60bb 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ReplicaMap.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/fsdataset/impl/ReplicaMap.java
+@@ -26,7 +26,7 @@
+ import java.util.Map;
+ import java.util.concurrent.locks.ReadWriteLock;
+ 
+-import com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ import org.apache.hadoop.HadoopIllegalArgumentException;
+ import org.apache.hadoop.hdfs.protocol.Block;
+ import org.apache.hadoop.hdfs.server.datanode.ReplicaInfo;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/SyncTaskExecutionFeedbackCollector.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/SyncTaskExecutionFeedbackCollector.java
+index 19dd1e2..a5ee386 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/SyncTaskExecutionFeedbackCollector.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/SyncTaskExecutionFeedbackCollector.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.datanode.syncservice;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.hdfs.server.protocol.BlockSyncTaskExecutionFeedback;
+ import org.apache.hadoop.hdfs.server.protocol.BulkSyncTaskExecutionFeedback;
+ 
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/BlockSyncOperationExecutor.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/BlockSyncOperationExecutor.java
+index 286c5f2..b5569b6 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/BlockSyncOperationExecutor.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/BlockSyncOperationExecutor.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.datanode.syncservice.executor;
+ 
+-import com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.BBUploadHandle;
+ import org.apache.hadoop.fs.FileSystem;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSEditLog.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSEditLog.java
+index 8605a4d..540e946 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSEditLog.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSEditLog.java
+@@ -17,9 +17,9 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode;
+ 
+-import com.google.common.annotations.VisibleForTesting;
+-import com.google.common.base.Preconditions;
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.base.Preconditions;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import static org.apache.hadoop.util.ExitUtil.terminate;
+ import static org.apache.hadoop.util.Time.monotonicNow;
+ 
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/MountManager.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/MountManager.java
+index 49e40cf..dbb2b97 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/MountManager.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/MountManager.java
+@@ -17,7 +17,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode;
+ 
+-import com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.classification.InterfaceStability;
+ import org.apache.hadoop.conf.Configuration;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/SyncMountManager.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/SyncMountManager.java
+index 7937f31..e7af69b 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/SyncMountManager.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/SyncMountManager.java
+@@ -17,8 +17,8 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode;
+ 
+-import com.google.common.collect.Lists;
+-import com.google.common.collect.Maps;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Maps;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.MountMode;
+ import org.apache.hadoop.fs.XAttr;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/mountmanager/SimpleReadCacheManager.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/mountmanager/SimpleReadCacheManager.java
+index 601d816..86d72cb 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/mountmanager/SimpleReadCacheManager.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/mountmanager/SimpleReadCacheManager.java
+@@ -17,8 +17,8 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.mountmanager;
+ 
+-import com.google.common.annotations.VisibleForTesting;
+-import com.google.common.base.Preconditions;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.base.Preconditions;
+ import org.apache.commons.io.IOUtils;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.Path;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/DefaultSyncServiceFileFilterImpl.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/DefaultSyncServiceFileFilterImpl.java
+index 5455f0c..4bd4a9b 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/DefaultSyncServiceFileFilterImpl.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/DefaultSyncServiceFileFilterImpl.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ 
+ /**
+  * Default file filter for sync service of provided storage.
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/SyncServiceSatisfier.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/SyncServiceSatisfier.java
+index 1fa09ad..4b5a510 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/SyncServiceSatisfier.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/SyncServiceSatisfier.java
+@@ -16,8 +16,8 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice;
+ 
+-import com.google.common.annotations.VisibleForTesting;
+-import com.google.common.collect.Queues;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Queues;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.hdfs.server.aliasmap.AliasMapUtil;
+ import org.apache.hadoop.hdfs.server.blockmanagement.BlockManager;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/WriteCacheEvictor.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/WriteCacheEvictor.java
+index feee7cf..e4f7fe6 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/WriteCacheEvictor.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/WriteCacheEvictor.java
+@@ -17,8 +17,8 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice;
+ 
+-import com.google.common.annotations.VisibleForTesting;
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.StorageType;
+ import org.apache.hadoop.hdfs.DFSConfigKeys;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/DirectoryPlanner.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/DirectoryPlanner.java
+index 197e30b..14fbb3a 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/DirectoryPlanner.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/DirectoryPlanner.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.planner;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.fs.Path;
+ import org.apache.hadoop.hdfs.protocol.SnapshotDiffReport;
+ import org.apache.hadoop.hdfs.protocol.SnapshotDiffReport.DiffReportEntry;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/FileAndDirsSyncTasks.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/FileAndDirsSyncTasks.java
+index b6faab0..c5d18e3 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/FileAndDirsSyncTasks.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/FileAndDirsSyncTasks.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.planner;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.hdfs.server.protocol.SyncTask;
+ 
+ import java.util.Collections;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PartitionedDiffReport.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PartitionedDiffReport.java
+index 08a0ec3..82c267d 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PartitionedDiffReport.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PartitionedDiffReport.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.planner;
+ 
+-import com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ import org.apache.hadoop.fs.Path;
+ import org.apache.hadoop.hdfs.DFSUtil;
+ import org.apache.hadoop.hdfs.protocol.SnapshotDiffReport;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlan.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlan.java
+index b6232e8..86b4791 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlan.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlan.java
+@@ -16,8 +16,8 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.planner;
+ 
+-import com.google.common.annotations.VisibleForTesting;
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.fs.Path;
+ import org.apache.hadoop.hdfs.server.protocol.SyncTask;
+ 
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlanFactory.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlanFactory.java
+index 0b0a71e..6b95dd5 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlanFactory.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/PhasedPlanFactory.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.planner;
+ 
+-import com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ import org.apache.hadoop.hdfs.DFSUtil;
+ import org.apache.hadoop.hdfs.protocol.Block;
+ import org.apache.hadoop.hdfs.protocol.LocatedBlocks;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasks.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasks.java
+index 501a6ca..11df41c 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasks.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasks.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker;
+ 
+-import com.google.common.collect.Maps;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Maps;
+ import org.apache.commons.lang3.tuple.Pair;
+ 
+ import java.util.Collection;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasksFactory.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasksFactory.java
+index 64be2a8..58e711b 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasksFactory.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/CurrentTasksFactory.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.hdfs.DFSConfigKeys;
+ 
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SchedulableSyncPhase.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SchedulableSyncPhase.java
+index 17dd20c..65302bb 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SchedulableSyncPhase.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SchedulableSyncPhase.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.hdfs.server.protocol.BlockSyncTask;
+ import org.apache.hadoop.hdfs.server.protocol.MetadataSyncTask;
+ 
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SyncMountSnapshotUpdateTrackerImpl.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SyncMountSnapshotUpdateTrackerImpl.java
+index ff2c5ea..7cebc70 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SyncMountSnapshotUpdateTrackerImpl.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/SyncMountSnapshotUpdateTrackerImpl.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.FileStatus;
+ import org.apache.hadoop.fs.FileSystem;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/SingleMultipart.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/SingleMultipart.java
+index f82cbb4..aeab62f 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/SingleMultipart.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/SingleMultipart.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker.multipart;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.hdfs.protocol.LocatedBlock;
+ import org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker.CurrentTasksFactory;
+ import org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker.multipart.phases.MultipartPhase;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/UploadHandlesCollector.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/UploadHandlesCollector.java
+index 174f938..fe19517 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/UploadHandlesCollector.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/multipart/UploadHandlesCollector.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker.multipart;
+ 
+-import com.google.common.collect.Maps;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Maps;
+ 
+ import java.nio.ByteBuffer;
+ import java.util.List;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/BlockSyncTask.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/BlockSyncTask.java
+index 028e09d..b2434c0 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/BlockSyncTask.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/BlockSyncTask.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.protocol;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.hdfs.protocol.LocatedBlock;
+ import org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker.TrackableTask;
+ 
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/ProvidedVolumeCommand.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/ProvidedVolumeCommand.java
+index 6ac22c6..f407444 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/ProvidedVolumeCommand.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/protocol/ProvidedVolumeCommand.java
+@@ -17,7 +17,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.protocol;
+ 
+-import com.google.common.annotations.VisibleForTesting;
++import org.apache.hadoop.thirdparty.com.google.common.annotations.VisibleForTesting;
+ import org.apache.hadoop.classification.InterfaceAudience;
+ import org.apache.hadoop.classification.InterfaceStability;
+ import org.apache.hadoop.hdfs.server.common.ProvidedVolumeInfo;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/util/RemoteMountUtils.java b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/util/RemoteMountUtils.java
+index 3e1935a..1e62704 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/util/RemoteMountUtils.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/util/RemoteMountUtils.java
+@@ -18,7 +18,7 @@
+ 
+ package org.apache.hadoop.hdfs.util;
+ 
+-import com.google.common.base.Preconditions;
++import org.apache.hadoop.thirdparty.com.google.common.base.Preconditions;
+ import org.apache.hadoop.util.StringUtils;
+ 
+ import java.util.ArrayList;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/TestBlockSyncOperationExecutor.java b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/TestBlockSyncOperationExecutor.java
+index f00bd8a..466b264 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/TestBlockSyncOperationExecutor.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/datanode/syncservice/executor/TestBlockSyncOperationExecutor.java
+@@ -16,7 +16,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.datanode.syncservice.executor;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.BBPartHandle;
+ import org.apache.hadoop.fs.MultipartUploader;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/TestSyncServiceSatisfier.java b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/TestSyncServiceSatisfier.java
+index 39f2331..af9ba1f 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/TestSyncServiceSatisfier.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/TestSyncServiceSatisfier.java
+@@ -17,7 +17,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.fs.MountMode;
+ import org.apache.hadoop.fs.Path;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestDirectoryPlanner.java b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestDirectoryPlanner.java
+index cf5d5cb..441da47 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestDirectoryPlanner.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestDirectoryPlanner.java
+@@ -17,7 +17,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.planner;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.fs.MountMode;
+ import org.apache.hadoop.fs.Path;
+ import org.apache.hadoop.fs.permission.FsPermission;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestFilePlanner.java b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestFilePlanner.java
+index 85e4588..29b84dd 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestFilePlanner.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/planner/TestFilePlanner.java
+@@ -17,7 +17,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.planner;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.fs.MountMode;
+ import org.apache.hadoop.fs.permission.FsPermission;
+ import org.apache.hadoop.fs.permission.PermissionStatus;
+diff --git a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/TestSyncMountSnapshotUpdateTracker.java b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/TestSyncMountSnapshotUpdateTracker.java
+index 45e5ae9..674d6c8 100644
+--- a/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/TestSyncMountSnapshotUpdateTracker.java
++++ b/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/server/namenode/syncservice/updatetracker/TestSyncMountSnapshotUpdateTracker.java
+@@ -17,7 +17,7 @@
+  */
+ package org.apache.hadoop.hdfs.server.namenode.syncservice.updatetracker;
+ 
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.hadoop.conf.Configuration;
+ import org.apache.hadoop.hdfs.protocol.Block;
+ import org.apache.hadoop.hdfs.protocol.ExtendedBlock;
+diff --git a/hadoop-tools/hadoop-fs2img/src/test/java/org/apache/hadoop/hdfs/server/namenode/ITestProvidedImplementation.java b/hadoop-tools/hadoop-fs2img/src/test/java/org/apache/hadoop/hdfs/server/namenode/ITestProvidedImplementation.java
+index ba22ada..cc75be4 100644
+--- a/hadoop-tools/hadoop-fs2img/src/test/java/org/apache/hadoop/hdfs/server/namenode/ITestProvidedImplementation.java
++++ b/hadoop-tools/hadoop-fs2img/src/test/java/org/apache/hadoop/hdfs/server/namenode/ITestProvidedImplementation.java
+@@ -40,8 +40,8 @@
+ import java.util.Random;
+ import java.util.Set;
+ 
+-import com.google.common.collect.ImmutableList;
+-import com.google.common.collect.Lists;
++import org.apache.hadoop.thirdparty.com.google.common.collect.ImmutableList;
++import org.apache.hadoop.thirdparty.com.google.common.collect.Lists;
+ import org.apache.commons.io.FileUtils;
+ import org.apache.hadoop.fs.BlockLocation;
+ import org.apache.hadoop.conf.Configuration;
