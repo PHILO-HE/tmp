@@ -1,0 +1,6 @@
+appCount=$(yarn application -list|grep application_|wc -l)
+while [ appCount != 0 ]
+do
+sleep 5
+appCount=$(yarn application -list|grep application_|wc -l)
+done 

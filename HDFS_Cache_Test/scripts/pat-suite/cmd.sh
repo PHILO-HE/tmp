@@ -1,0 +1,1 @@
+hadoop jar /root/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.0.2-tests.jar TestDFSIO -read -random -nrFiles 64 -size 16GB -resFile /root/PAT/PAT-collecting-data/logs/TestDFSIO-aepcache-random-nopat.log

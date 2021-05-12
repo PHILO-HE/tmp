@@ -1,0 +1,479 @@
+2019-07-04 16:25:24 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:25:25 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-07-04 16:25:25 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:25:25 INFO  metastore:376 - Trying to connect to metastore with URI thrift://sr606:9083
+2019-07-04 16:25:25 INFO  metastore:472 - Connected to metastore.
+2019-07-04 16:25:26 INFO  SessionState:641 - Created local directory: /tmp/ec030fcb-edee-451e-84dd-3495ee781d1d_resources
+2019-07-04 16:25:26 INFO  SessionState:641 - Created HDFS directory: /hive/root/ec030fcb-edee-451e-84dd-3495ee781d1d
+2019-07-04 16:25:26 INFO  SessionState:641 - Created local directory: /tmp/root/ec030fcb-edee-451e-84dd-3495ee781d1d
+2019-07-04 16:25:26 INFO  SessionState:641 - Created HDFS directory: /hive/root/ec030fcb-edee-451e-84dd-3495ee781d1d/_tmp_space.db
+2019-07-04 16:25:26 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:25:26 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:25:26 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:25:26 INFO  SparkContext:54 - Running Spark version 2.3.0
+2019-07-04 16:25:26 INFO  SparkContext:54 - Submitted application: SparkSQL::10.1.2.206
+2019-07-04 16:25:26 INFO  SecurityManager:54 - Changing view acls to: root
+2019-07-04 16:25:26 INFO  SecurityManager:54 - Changing modify acls to: root
+2019-07-04 16:25:26 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-07-04 16:25:26 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-07-04 16:25:26 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2019-07-04 16:25:26 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 42024.
+2019-07-04 16:25:26 INFO  SparkEnv:54 - Registering MapOutputTracker
+2019-07-04 16:25:26 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2019-07-04 16:25:26 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-07-04 16:25:26 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2019-07-04 16:25:26 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-389214c0-18e6-4c20-8323-97abb9c52b35
+2019-07-04 16:25:26 INFO  MemoryStore:54 - MemoryStore started with capacity 4.1 GB
+2019-07-04 16:25:26 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2019-07-04 16:25:26 INFO  log:192 - Logging initialized @2611ms
+2019-07-04 16:25:26 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2019-07-04 16:25:26 INFO  Server:414 - Started @2668ms
+2019-07-04 16:25:26 INFO  AbstractConnector:278 - Started ServerConnector@10f7918f{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-07-04 16:25:26 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3240b2a4{/jobs,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@59696551{/jobs/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@648d0e6d{/jobs/job,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@17273273{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5f69e2b{/stages,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@984169e{/stages/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@43f1bb92{/stages/stage,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7544ac86{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3b27b497{/stages/pool,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@b1534d3{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3c74aa0d{/storage,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6c841199{/storage/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6a818392{/storage/rdd,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@489091bd{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@512d6e60{/environment,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1de9b505{/environment/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7b122839{/executors,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3743539f{/executors/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@d277579{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5db6b845{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@378f002a{/static,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2da3b078{/,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@544e8149{/api,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ae202c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@46aa712c{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-07-04 16:25:26 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://sr606:4040
+2019-07-04 16:25:27 INFO  RMProxy:98 - Connecting to ResourceManager at sr606/10.1.2.206:8032
+2019-07-04 16:25:27 INFO  Client:54 - Requesting a new application from cluster with 2 NodeManagers
+2019-07-04 16:25:27 INFO  Client:54 - Verifying our application has not requested more than the maximum memory capability of the cluster (184320 MB per container)
+2019-07-04 16:25:27 INFO  Client:54 - Will allocate AM container, with 896 MB memory including 384 MB overhead
+2019-07-04 16:25:27 INFO  Client:54 - Setting up container launch context for our AM
+2019-07-04 16:25:27 INFO  Client:54 - Setting up the launch environment for our AM container
+2019-07-04 16:25:27 INFO  Client:54 - Preparing resources for our AM container
+2019-07-04 16:25:27 WARN  Client:66 - Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2019-07-04 16:25:29 INFO  Client:54 - Uploading resource file:/tmp/spark-09085849-b24c-407e-b794-b69c281dc3bd/__spark_libs__4414226527877928630.zip -> hdfs://sr606:9000/user/root/.sparkStaging/application_1562032152458_0169/__spark_libs__4414226527877928630.zip
+2019-07-04 16:25:30 INFO  Client:54 - Uploading resource file:/tmp/spark-09085849-b24c-407e-b794-b69c281dc3bd/__spark_conf__5288529553383048455.zip -> hdfs://sr606:9000/user/root/.sparkStaging/application_1562032152458_0169/__spark_conf__.zip
+2019-07-04 16:25:30 INFO  SecurityManager:54 - Changing view acls to: root
+2019-07-04 16:25:30 INFO  SecurityManager:54 - Changing modify acls to: root
+2019-07-04 16:25:30 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-07-04 16:25:30 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-07-04 16:25:30 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2019-07-04 16:25:30 INFO  Client:54 - Submitting application application_1562032152458_0169 to ResourceManager
+2019-07-04 16:25:30 INFO  YarnClientImpl:273 - Submitted application application_1562032152458_0169
+2019-07-04 16:25:30 INFO  SchedulerExtensionServices:54 - Starting Yarn extension services with app application_1562032152458_0169 and attemptId None
+2019-07-04 16:25:31 INFO  Client:54 - Application report for application_1562032152458_0169 (state: ACCEPTED)
+2019-07-04 16:25:31 INFO  Client:54 - 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.root
+	 start time: 1562228730701
+	 final status: UNDEFINED
+	 tracking URL: http://sr606:8088/proxy/application_1562032152458_0169/
+	 user: root
+2019-07-04 16:25:32 INFO  Client:54 - Application report for application_1562032152458_0169 (state: ACCEPTED)
+2019-07-04 16:25:33 INFO  Client:54 - Application report for application_1562032152458_0169 (state: ACCEPTED)
+2019-07-04 16:25:34 INFO  Client:54 - Application report for application_1562032152458_0169 (state: ACCEPTED)
+2019-07-04 16:25:34 INFO  YarnClientSchedulerBackend:54 - Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> sr606, PROXY_URI_BASES -> http://sr606:8088/proxy/application_1562032152458_0169), /proxy/application_1562032152458_0169
+2019-07-04 16:25:34 INFO  JettyUtils:54 - Adding filter: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2019-07-04 16:25:35 INFO  YarnSchedulerBackend$YarnSchedulerEndpoint:54 - ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2019-07-04 16:25:35 INFO  Client:54 - Application report for application_1562032152458_0169 (state: RUNNING)
+2019-07-04 16:25:35 INFO  Client:54 - 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.1.2.207
+	 ApplicationMaster RPC port: 0
+	 queue: root.root
+	 start time: 1562228730701
+	 final status: UNDEFINED
+	 tracking URL: http://sr606:8088/proxy/application_1562032152458_0169/
+	 user: root
+2019-07-04 16:25:35 INFO  YarnClientSchedulerBackend:54 - Application application_1562032152458_0169 has started running.
+2019-07-04 16:25:35 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34437.
+2019-07-04 16:25:35 INFO  NettyBlockTransferService:54 - Server created on sr606:34437
+2019-07-04 16:25:35 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-07-04 16:25:35 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, sr606, 34437, None)
+2019-07-04 16:25:35 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:34437 with 4.1 GB RAM, BlockManagerId(driver, sr606, 34437, None)
+2019-07-04 16:25:35 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, sr606, 34437, None)
+2019-07-04 16:25:35 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, sr606, 34437, None)
+2019-07-04 16:25:36 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5cce40d7{/metrics/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:38 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46370) with ID 1
+2019-07-04 16:25:38 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:45997 with 7.8 GB RAM, BlockManagerId(1, sr607, 45997, None)
+2019-07-04 16:25:39 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46378) with ID 3
+2019-07-04 16:25:39 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33784) with ID 2
+2019-07-04 16:25:40 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:45096 with 7.8 GB RAM, BlockManagerId(3, sr607, 45096, None)
+2019-07-04 16:25:40 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:40480 with 7.8 GB RAM, BlockManagerId(2, sr606, 40480, None)
+2019-07-04 16:25:40 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33786) with ID 4
+2019-07-04 16:25:40 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:37199 with 7.8 GB RAM, BlockManagerId(4, sr606, 37199, None)
+2019-07-04 16:25:43 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46398) with ID 7
+2019-07-04 16:25:43 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33794) with ID 10
+2019-07-04 16:25:43 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:41414 with 7.8 GB RAM, BlockManagerId(7, sr607, 41414, None)
+2019-07-04 16:25:43 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46402) with ID 5
+2019-07-04 16:25:43 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33796) with ID 6
+2019-07-04 16:25:43 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46400) with ID 9
+2019-07-04 16:25:43 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33798) with ID 8
+2019-07-04 16:25:43 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:33783 with 7.8 GB RAM, BlockManagerId(10, sr606, 33783, None)
+2019-07-04 16:25:43 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:39489 with 7.8 GB RAM, BlockManagerId(5, sr607, 39489, None)
+2019-07-04 16:25:43 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:45176 with 7.8 GB RAM, BlockManagerId(6, sr606, 45176, None)
+2019-07-04 16:25:43 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:40642 with 7.8 GB RAM, BlockManagerId(9, sr607, 40642, None)
+2019-07-04 16:25:43 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:34532 with 7.8 GB RAM, BlockManagerId(8, sr606, 34532, None)
+2019-07-04 16:25:46 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46426) with ID 13
+2019-07-04 16:25:46 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46428) with ID 11
+2019-07-04 16:25:46 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33806) with ID 12
+2019-07-04 16:25:46 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33808) with ID 14
+2019-07-04 16:25:46 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46432) with ID 17
+2019-07-04 16:25:46 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.207:46430) with ID 15
+2019-07-04 16:25:46 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33810) with ID 16
+2019-07-04 16:25:46 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:38669 with 7.8 GB RAM, BlockManagerId(13, sr607, 38669, None)
+2019-07-04 16:25:46 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:44544 with 7.8 GB RAM, BlockManagerId(12, sr606, 44544, None)
+2019-07-04 16:25:46 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:35800 with 7.8 GB RAM, BlockManagerId(11, sr607, 35800, None)
+2019-07-04 16:25:46 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:38406 with 7.8 GB RAM, BlockManagerId(14, sr606, 38406, None)
+2019-07-04 16:25:46 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:40886 with 7.8 GB RAM, BlockManagerId(15, sr607, 40886, None)
+2019-07-04 16:25:46 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr607:42807 with 7.8 GB RAM, BlockManagerId(17, sr607, 42807, None)
+2019-07-04 16:25:46 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:39228 with 7.8 GB RAM, BlockManagerId(16, sr606, 39228, None)
+2019-07-04 16:25:49 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33816) with ID 19
+2019-07-04 16:25:49 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.1.2.206:33818) with ID 18
+2019-07-04 16:25:49 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:45774 with 7.8 GB RAM, BlockManagerId(19, sr606, 45774, None)
+2019-07-04 16:25:49 INFO  BlockManagerMasterEndpoint:54 - Registering block manager sr606:35894 with 7.8 GB RAM, BlockManagerId(18, sr606, 35894, None)
+2019-07-04 16:25:57 INFO  YarnClientSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000(ms)
+2019-07-04 16:25:57 INFO  SharedState:54 - loading hive config file: file:/root/hadoop-3.1.2/spark/conf/hive-site.xml
+2019-07-04 16:25:57 INFO  SharedState:54 - spark.sql.warehouse.dir is not set, but hive.metastore.warehouse.dir is set. Setting spark.sql.warehouse.dir to the value of hive.metastore.warehouse.dir ('/hive').
+2019-07-04 16:25:57 INFO  SharedState:54 - Warehouse path is '/hive'.
+2019-07-04 16:25:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@19b9f903{/SQL,null,AVAILABLE,@Spark}
+2019-07-04 16:25:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@10e56da9{/SQL/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4fbaa7f5{/SQL/execution,null,AVAILABLE,@Spark}
+2019-07-04 16:25:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3b3056a6{/SQL/execution/json,null,AVAILABLE,@Spark}
+2019-07-04 16:25:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4f235e8e{/static/sql,null,AVAILABLE,@Spark}
+2019-07-04 16:25:57 INFO  HiveUtils:54 - Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+2019-07-04 16:25:57 INFO  HiveClientImpl:54 - Warehouse location for Hive client (version 1.2.2) is /hive
+2019-07-04 16:25:57 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2019-07-04 16:25:58 WARN  Utils:66 - Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+2019-07-04 16:25:58 INFO  CodeGenerator:54 - Code generated in 146.285106 ms
+2019-07-04 16:25:59 INFO  CodeGenerator:54 - Code generated in 29.127996 ms
+2019-07-04 16:25:59 INFO  CodeGenerator:54 - Code generated in 32.026091 ms
+2019-07-04 16:25:59 INFO  CodeGenerator:54 - Code generated in 33.516967 ms
+2019-07-04 16:25:59 INFO  CodeGenerator:54 - Code generated in 33.685665 ms
+2019-07-04 16:25:59 INFO  CodeGenerator:54 - Code generated in 37.059034 ms
+2019-07-04 16:25:59 INFO  CodeGenerator:54 - Code generated in 40.593593 ms
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 289.2 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 289.2 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 289.5 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 289.2 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 25.9 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 25.8 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on sr606:34437 (size: 25.9 KB, free: 4.1 GB)
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 25.8 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  SparkContext:54 - Created broadcast 3 from 
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 25.8 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on sr606:34437 (size: 25.8 KB, free: 4.1 GB)
+2019-07-04 16:25:59 INFO  SparkContext:54 - Created broadcast 2 from 
+2019-07-04 16:25:59 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on sr606:34437 (size: 25.8 KB, free: 4.1 GB)
+2019-07-04 16:25:59 INFO  SparkContext:54 - Created broadcast 0 from 
+2019-07-04 16:25:59 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on sr606:34437 (size: 25.8 KB, free: 4.1 GB)
+2019-07-04 16:25:59 INFO  SparkContext:54 - Created broadcast 1 from 
+2019-07-04 16:25:59 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-04 16:25:59 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-04 16:25:59 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-04 16:25:59 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-04 16:25:59 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
+2019-07-04 16:25:59 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
+2019-07-04 16:25:59 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
+2019-07-04 16:25:59 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Got job 0 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (run at ThreadPoolExecutor.java:1142)
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Missing parents: List()
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[20] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 12.0 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.9 KB, free 4.1 GB)
+2019-07-04 16:25:59 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on sr606:34437 (size: 5.9 KB, free: 4.1 GB)
+2019-07-04 16:25:59 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[20] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
+2019-07-04 16:25:59 INFO  YarnScheduler:54 - Adding task set 0.0 with 2 tasks
+2019-07-04 16:25:59 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:25:59 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:25:59 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:25:59 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Got job 1 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (run at ThreadPoolExecutor.java:1142)
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Missing parents: List()
+2019-07-04 16:25:59 INFO  DAGScheduler:54 - Submitting ResultStage 1 (MapPartitionsRDD[22] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2019-07-04 16:25:59 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 11.5 KB, free 4.1 GB)
+2019-07-04 16:26:00 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 5.7 KB, free 4.1 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on sr606:34437 (size: 5.7 KB, free: 4.1 GB)
+2019-07-04 16:26:00 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[22] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
+2019-07-04 16:26:00 INFO  YarnScheduler:54 - Adding task set 1.0 with 2 tasks
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, sr607, executor 1, partition 0, PROCESS_LOCAL, 7915 bytes)
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 1.0 in stage 0.0 (TID 1, sr606, executor 10, partition 1, PROCESS_LOCAL, 7915 bytes)
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Got job 2 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Final stage: ResultStage 2 (run at ThreadPoolExecutor.java:1142)
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Missing parents: List()
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Submitting ResultStage 2 (MapPartitionsRDD[23] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 2, sr607, executor 13, partition 0, PROCESS_LOCAL, 7929 bytes)
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 3, sr606, executor 8, partition 1, PROCESS_LOCAL, 7929 bytes)
+2019-07-04 16:26:00 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 11.7 KB, free 4.1 GB)
+2019-07-04 16:26:00 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 5.8 KB, free 4.1 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on sr606:34437 (size: 5.8 KB, free: 4.1 GB)
+2019-07-04 16:26:00 INFO  SparkContext:54 - Created broadcast 6 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 2 (MapPartitionsRDD[23] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
+2019-07-04 16:26:00 INFO  YarnScheduler:54 - Adding task set 2.0 with 2 tasks
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Got job 3 (run at ThreadPoolExecutor.java:1142) with 2 output partitions
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (run at ThreadPoolExecutor.java:1142)
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Missing parents: List()
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[21] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2019-07-04 16:26:00 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 11.7 KB, free 4.1 GB)
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 4, sr607, executor 7, partition 0, PROCESS_LOCAL, 7915 bytes)
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 1.0 in stage 2.0 (TID 5, sr606, executor 16, partition 1, PROCESS_LOCAL, 7915 bytes)
+2019-07-04 16:26:00 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 5.8 KB, free 4.1 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on sr606:34437 (size: 5.8 KB, free: 4.1 GB)
+2019-07-04 16:26:00 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:26:00 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 3 (MapPartitionsRDD[21] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1))
+2019-07-04 16:26:00 INFO  YarnScheduler:54 - Adding task set 3.0 with 2 tasks
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 6, sr607, executor 17, partition 0, PROCESS_LOCAL, 7915 bytes)
+2019-07-04 16:26:00 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 7, sr606, executor 2, partition 1, PROCESS_LOCAL, 7915 bytes)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on sr607:41414 (size: 5.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on sr606:34532 (size: 5.7 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on sr606:39228 (size: 5.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on sr606:33783 (size: 5.9 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on sr607:38669 (size: 5.7 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on sr607:45997 (size: 5.9 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on sr607:42807 (size: 5.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on sr606:40480 (size: 5.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on sr606:34532 (size: 25.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on sr606:33783 (size: 25.9 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on sr606:40480 (size: 25.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on sr607:45997 (size: 25.9 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on sr607:41414 (size: 25.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on sr606:39228 (size: 25.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on sr607:38669 (size: 25.8 KB, free: 7.8 GB)
+2019-07-04 16:26:00 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on sr607:42807 (size: 25.8 KB, free: 7.8 GB)
+2019-07-04 16:26:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 0.0 (TID 1) in 1813 ms on sr606 (executor 10) (1/2)
+2019-07-04 16:26:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 7) in 1769 ms on sr606 (executor 2) (1/2)
+2019-07-04 16:26:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 1884 ms on sr607 (executor 1) (2/2)
+2019-07-04 16:26:01 INFO  YarnScheduler:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:01 INFO  DAGScheduler:54 - ResultStage 0 (run at ThreadPoolExecutor.java:1142) finished in 1.957 s
+2019-07-04 16:26:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 3) in 1848 ms on sr606 (executor 8) (1/2)
+2019-07-04 16:26:01 INFO  DAGScheduler:54 - Job 0 finished: run at ThreadPoolExecutor.java:1142, took 2.009776 s
+2019-07-04 16:26:01 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:26:01 INFO  CodeGenerator:54 - Code generated in 12.428882 ms
+2019-07-04 16:26:01 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 1024.3 KB, free 4.1 GB)
+2019-07-04 16:26:01 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 173.0 B, free 4.1 GB)
+2019-07-04 16:26:01 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on sr606:34437 (size: 173.0 B, free: 4.1 GB)
+2019-07-04 16:26:01 INFO  SparkContext:54 - Created broadcast 8 from run at ThreadPoolExecutor.java:1142
+2019-07-04 16:26:01 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 2) in 1917 ms on sr607 (executor 13) (2/2)
+2019-07-04 16:26:01 INFO  YarnScheduler:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:01 INFO  DAGScheduler:54 - ResultStage 1 (run at ThreadPoolExecutor.java:1142) finished in 1.993 s
+2019-07-04 16:26:01 INFO  DAGScheduler:54 - Job 1 finished: run at ThreadPoolExecutor.java:1142, took 2.073727 s
+2019-07-04 16:26:01 INFO  TaskSetManager:54 - Finished task 1.0 in stage 2.0 (TID 5) in 1896 ms on sr606 (executor 16) (1/2)
+2019-07-04 16:26:01 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 1056.0 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 11.0 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on sr606:34437 (size: 11.0 KB, free: 4.1 GB)
+2019-07-04 16:26:02 INFO  SparkContext:54 - Created broadcast 9 from run at ThreadPoolExecutor.java:1142
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 4) in 1955 ms on sr607 (executor 7) (2/2)
+2019-07-04 16:26:02 INFO  YarnScheduler:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - ResultStage 2 (run at ThreadPoolExecutor.java:1142) finished in 1.978 s
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Job 2 finished: run at ThreadPoolExecutor.java:1142, took 2.132105 s
+2019-07-04 16:26:02 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 6) in 1963 ms on sr607 (executor 17) (2/2)
+2019-07-04 16:26:02 INFO  YarnScheduler:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 1080.3 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - ResultStage 3 (run at ThreadPoolExecutor.java:1142) finished in 1.979 s
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Job 3 finished: run at ThreadPoolExecutor.java:1142, took 2.152688 s
+2019-07-04 16:26:02 WARN  SparkConf:66 - The configuration key 'spark.yarn.executor.memoryOverhead' has been deprecated as of Spark 2.3 and may be removed in the future. Please use the new key 'spark.executor.memoryOverhead' instead.
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 70.8 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on sr606:34437 (size: 70.8 KB, free: 4.1 GB)
+2019-07-04 16:26:02 INFO  SparkContext:54 - Created broadcast 10 from run at ThreadPoolExecutor.java:1142
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 1080.3 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 70.8 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on sr606:34437 (size: 70.8 KB, free: 4.1 GB)
+2019-07-04 16:26:02 INFO  SparkContext:54 - Created broadcast 11 from run at ThreadPoolExecutor.java:1142
+2019-07-04 16:26:02 INFO  CodeGenerator:54 - Code generated in 33.382102 ms
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 290.6 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 26.1 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on sr606:34437 (size: 26.1 KB, free: 4.1 GB)
+2019-07-04 16:26:02 INFO  SparkContext:54 - Created broadcast 12 from 
+2019-07-04 16:26:02 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-04 16:26:02 INFO  SparkContext:54 - Starting job: run at ThreadPoolExecutor.java:1142
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Registering RDD 29 (run at ThreadPoolExecutor.java:1142)
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Got job 4 (run at ThreadPoolExecutor.java:1142) with 1 output partitions
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Final stage: ResultStage 5 (run at ThreadPoolExecutor.java:1142)
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 4)
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 4)
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 4 (MapPartitionsRDD[29] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_13 stored as values in memory (estimated size 21.1 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  MemoryStore:54 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 8.5 KB, free 4.1 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on sr606:34437 (size: 8.5 KB, free: 4.1 GB)
+2019-07-04 16:26:02 INFO  SparkContext:54 - Created broadcast 13 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:26:02 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[29] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-07-04 16:26:02 INFO  YarnScheduler:54 - Adding task set 4.0 with 3 tasks
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Pending task 2 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Pending task 2 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 8, sr606, executor 10, partition 0, PROCESS_LOCAL, 7905 bytes)
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Starting task 1.0 in stage 4.0 (TID 9, sr606, executor 4, partition 1, PROCESS_LOCAL, 7905 bytes)
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Starting task 2.0 in stage 4.0 (TID 10, sr607, executor 17, partition 2, PROCESS_LOCAL, 7905 bytes)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on sr606:33783 (size: 8.5 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on sr607:42807 (size: 8.5 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on sr606:33783 (size: 26.1 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on sr607:42807 (size: 26.1 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on sr607:42807 (size: 11.0 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on sr606:33783 (size: 11.0 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on sr607:42807 (size: 70.8 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on sr606:37199 (size: 8.5 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on sr606:33783 (size: 70.8 KB, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on sr607:42807 (size: 173.0 B, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on sr606:33783 (size: 173.0 B, free: 7.8 GB)
+2019-07-04 16:26:02 INFO  TaskSetManager:54 - Finished task 2.0 in stage 4.0 (TID 10) in 506 ms on sr607 (executor 17) (1/3)
+2019-07-04 16:26:02 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on sr606:37199 (size: 26.1 KB, free: 7.8 GB)
+2019-07-04 16:26:03 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 8) in 1106 ms on sr606 (executor 10) (2/3)
+2019-07-04 16:26:03 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on sr606:37199 (size: 11.0 KB, free: 7.8 GB)
+2019-07-04 16:26:03 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on sr606:37199 (size: 70.8 KB, free: 7.8 GB)
+2019-07-04 16:26:04 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on sr606:37199 (size: 173.0 B, free: 7.8 GB)
+2019-07-04 16:26:04 INFO  TaskSetManager:54 - Finished task 1.0 in stage 4.0 (TID 9) in 2654 ms on sr606 (executor 4) (3/3)
+2019-07-04 16:26:04 INFO  YarnScheduler:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:04 INFO  DAGScheduler:54 - ShuffleMapStage 4 (run at ThreadPoolExecutor.java:1142) finished in 2.672 s
+2019-07-04 16:26:04 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-04 16:26:04 INFO  DAGScheduler:54 - running: Set()
+2019-07-04 16:26:04 INFO  DAGScheduler:54 - waiting: Set(ResultStage 5)
+2019-07-04 16:26:04 INFO  DAGScheduler:54 - failed: Set()
+2019-07-04 16:26:04 INFO  DAGScheduler:54 - Submitting ResultStage 5 (MapPartitionsRDD[32] at run at ThreadPoolExecutor.java:1142), which has no missing parents
+2019-07-04 16:26:04 INFO  MemoryStore:54 - Block broadcast_14 stored as values in memory (estimated size 7.3 KB, free 4.1 GB)
+2019-07-04 16:26:04 INFO  MemoryStore:54 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 3.8 KB, free 4.1 GB)
+2019-07-04 16:26:04 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on sr606:34437 (size: 3.8 KB, free: 4.1 GB)
+2019-07-04 16:26:04 INFO  SparkContext:54 - Created broadcast 14 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:26:04 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[32] at run at ThreadPoolExecutor.java:1142) (first 15 tasks are for partitions Vector(0))
+2019-07-04 16:26:04 INFO  YarnScheduler:54 - Adding task set 5.0 with 1 tasks
+2019-07-04 16:26:04 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 11, sr607, executor 3, partition 0, NODE_LOCAL, 7765 bytes)
+2019-07-04 16:26:05 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on sr607:45096 (size: 3.8 KB, free: 7.8 GB)
+2019-07-04 16:26:05 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 0 to 10.1.2.207:46378
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 11) in 816 ms on sr607 (executor 3) (1/1)
+2019-07-04 16:26:05 INFO  YarnScheduler:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - ResultStage 5 (run at ThreadPoolExecutor.java:1142) finished in 0.825 s
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Job 4 finished: run at ThreadPoolExecutor.java:1142, took 3.518842 s
+2019-07-04 16:26:05 INFO  MemoryStore:54 - Block broadcast_15 stored as values in memory (estimated size 120.0 B, free 4.1 GB)
+2019-07-04 16:26:05 INFO  MemoryStore:54 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 142.0 B, free 4.1 GB)
+2019-07-04 16:26:05 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on sr606:34437 (size: 142.0 B, free: 4.1 GB)
+2019-07-04 16:26:05 INFO  SparkContext:54 - Created broadcast 15 from run at ThreadPoolExecutor.java:1142
+2019-07-04 16:26:05 INFO  CodeGenerator:54 - Code generated in 21.318061 ms
+2019-07-04 16:26:05 INFO  CodeGenerator:54 - Code generated in 28.302969 ms
+2019-07-04 16:26:05 INFO  MemoryStore:54 - Block broadcast_16 stored as values in memory (estimated size 290.6 KB, free 4.1 GB)
+2019-07-04 16:26:05 INFO  MemoryStore:54 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 26.1 KB, free 4.1 GB)
+2019-07-04 16:26:05 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on sr606:34437 (size: 26.1 KB, free: 4.1 GB)
+2019-07-04 16:26:05 INFO  SparkContext:54 - Created broadcast 16 from 
+2019-07-04 16:26:05 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-04 16:26:05 INFO  SparkContext:54 - Starting job: processCmd at CliDriver.java:376
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Registering RDD 38 (processCmd at CliDriver.java:376)
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Got job 5 (processCmd at CliDriver.java:376) with 1 output partitions
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Final stage: ResultStage 7 (processCmd at CliDriver.java:376)
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 6)
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 6)
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 6 (MapPartitionsRDD[38] at processCmd at CliDriver.java:376), which has no missing parents
+2019-07-04 16:26:05 INFO  MemoryStore:54 - Block broadcast_17 stored as values in memory (estimated size 21.1 KB, free 4.1 GB)
+2019-07-04 16:26:05 INFO  MemoryStore:54 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 8.5 KB, free 4.1 GB)
+2019-07-04 16:26:05 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on sr606:34437 (size: 8.5 KB, free: 4.1 GB)
+2019-07-04 16:26:05 INFO  SparkContext:54 - Created broadcast 17 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:26:05 INFO  DAGScheduler:54 - Submitting 3 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[38] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0, 1, 2))
+2019-07-04 16:26:05 INFO  YarnScheduler:54 - Adding task set 6.0 with 3 tasks
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Pending task 2 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Pending task 2 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Pending task 1 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr606 , where there are executors 12,8,19,4,16,10,6,14,2,18
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Pending task 0 has a cached location at sr607 , where there are executors 15,11,9,13,5,1,17,7,3
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 12, sr607, executor 11, partition 0, PROCESS_LOCAL, 7905 bytes)
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Starting task 1.0 in stage 6.0 (TID 13, sr606, executor 14, partition 1, PROCESS_LOCAL, 7905 bytes)
+2019-07-04 16:26:05 INFO  TaskSetManager:54 - Starting task 2.0 in stage 6.0 (TID 14, sr606, executor 12, partition 2, PROCESS_LOCAL, 7905 bytes)
+2019-07-04 16:26:06 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on sr606:44544 (size: 8.5 KB, free: 7.8 GB)
+2019-07-04 16:26:06 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on sr606:38406 (size: 8.5 KB, free: 7.8 GB)
+2019-07-04 16:26:06 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on sr607:35800 (size: 8.5 KB, free: 7.8 GB)
+2019-07-04 16:26:06 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on sr607:35800 (size: 26.1 KB, free: 7.8 GB)
+2019-07-04 16:26:06 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on sr606:44544 (size: 26.1 KB, free: 7.8 GB)
+2019-07-04 16:26:06 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on sr606:38406 (size: 26.1 KB, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on sr607:35800 (size: 11.0 KB, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on sr607:35800 (size: 70.8 KB, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on sr607:35800 (size: 173.0 B, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on sr606:44544 (size: 11.0 KB, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on sr606:44544 (size: 70.8 KB, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on sr606:38406 (size: 11.0 KB, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on sr606:44544 (size: 173.0 B, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on sr606:38406 (size: 70.8 KB, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on sr606:38406 (size: 173.0 B, free: 7.8 GB)
+2019-07-04 16:26:07 INFO  TaskSetManager:54 - Finished task 2.0 in stage 6.0 (TID 14) in 2099 ms on sr606 (executor 12) (1/3)
+2019-07-04 16:26:08 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 12) in 2537 ms on sr607 (executor 11) (2/3)
+2019-07-04 16:26:08 INFO  TaskSetManager:54 - Finished task 1.0 in stage 6.0 (TID 13) in 2715 ms on sr606 (executor 14) (3/3)
+2019-07-04 16:26:08 INFO  YarnScheduler:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:08 INFO  DAGScheduler:54 - ShuffleMapStage 6 (processCmd at CliDriver.java:376) finished in 2.733 s
+2019-07-04 16:26:08 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-04 16:26:08 INFO  DAGScheduler:54 - running: Set()
+2019-07-04 16:26:08 INFO  DAGScheduler:54 - waiting: Set(ResultStage 7)
+2019-07-04 16:26:08 INFO  DAGScheduler:54 - failed: Set()
+2019-07-04 16:26:08 INFO  DAGScheduler:54 - Submitting ResultStage 7 (MapPartitionsRDD[45] at processCmd at CliDriver.java:376), which has no missing parents
+2019-07-04 16:26:08 INFO  MemoryStore:54 - Block broadcast_18 stored as values in memory (estimated size 50.6 KB, free 4.1 GB)
+2019-07-04 16:26:08 INFO  MemoryStore:54 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 21.8 KB, free 4.1 GB)
+2019-07-04 16:26:08 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on sr606:34437 (size: 21.8 KB, free: 4.1 GB)
+2019-07-04 16:26:08 INFO  SparkContext:54 - Created broadcast 18 from broadcast at DAGScheduler.scala:1039
+2019-07-04 16:26:08 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[45] at processCmd at CliDriver.java:376) (first 15 tasks are for partitions Vector(0))
+2019-07-04 16:26:08 INFO  YarnScheduler:54 - Adding task set 7.0 with 1 tasks
+2019-07-04 16:26:08 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 15, sr606, executor 6, partition 0, NODE_LOCAL, 7765 bytes)
+2019-07-04 16:26:08 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on sr606:45176 (size: 21.8 KB, free: 7.8 GB)
+2019-07-04 16:26:09 INFO  MapOutputTrackerMasterEndpoint:54 - Asked to send map output locations for shuffle 1 to 10.1.2.206:33796
+2019-07-04 16:26:09 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on sr606:45176 (size: 142.0 B, free: 7.8 GB)
+2019-07-04 16:26:09 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 15) in 1155 ms on sr606 (executor 6) (1/1)
+2019-07-04 16:26:09 INFO  YarnScheduler:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2019-07-04 16:26:09 INFO  DAGScheduler:54 - ResultStage 7 (processCmd at CliDriver.java:376) finished in 1.286 s
+2019-07-04 16:26:09 INFO  DAGScheduler:54 - Job 5 finished: processCmd at CliDriver.java:376, took 4.029783 s
+1.49336870026525198939
+2019-07-04 16:26:09 INFO  SparkSQLCLIDriver:951 - Time taken: 12.357 seconds, Fetched 1 row(s)
+2019-07-04 16:26:09 INFO  AbstractConnector:318 - Stopped Spark@10f7918f{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-07-04 16:26:09 INFO  SparkUI:54 - Stopped Spark web UI at http://sr606:4040
+2019-07-04 16:26:09 INFO  YarnClientSchedulerBackend:54 - Interrupting monitor thread
+2019-07-04 16:26:09 INFO  YarnClientSchedulerBackend:54 - Shutting down all executors
+2019-07-04 16:26:09 INFO  YarnSchedulerBackend$YarnDriverEndpoint:54 - Asking each executor to shut down
+2019-07-04 16:26:09 INFO  SchedulerExtensionServices:54 - Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+2019-07-04 16:26:09 INFO  YarnClientSchedulerBackend:54 - Stopped
+2019-07-04 16:26:09 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2019-07-04 16:26:09 INFO  MemoryStore:54 - MemoryStore cleared
+2019-07-04 16:26:09 INFO  BlockManager:54 - BlockManager stopped
+2019-07-04 16:26:09 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2019-07-04 16:26:09 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2019-07-04 16:26:09 INFO  SparkContext:54 - Successfully stopped SparkContext
+2019-07-04 16:26:09 INFO  ShutdownHookManager:54 - Shutdown hook called
+2019-07-04 16:26:09 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-09085849-b24c-407e-b794-b69c281dc3bd
+2019-07-04 16:26:09 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-30a5251a-7feb-43c0-89ca-9cf60026db59
