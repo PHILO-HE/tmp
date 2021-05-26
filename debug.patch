@@ -1,0 +1,55 @@
+diff --git a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java
+index fa781b6..03d5737 100644
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java
+@@ -348,7 +348,7 @@ public boolean verifyCanMlock() {
+           // This can happen if the user has an older version of libhadoop.so
+           // installed - in this case we can continue without native IO
+           // after warning
+-          PerformanceAdvisory.LOG.debug("Unable to initialize NativeIO libraries", t);
++          PerformanceAdvisory.LOG.error("Unable to initialize NativeIO libraries", t);
+         }
+       }
+     }
+@@ -810,7 +810,7 @@ public static boolean access(String path, AccessRight desiredAccess)
+           // This can happen if the user has an older version of libhadoop.so
+           // installed - in this case we can continue without native IO
+           // after warning
+-          PerformanceAdvisory.LOG.debug("Unable to initialize NativeIO libraries", t);
++          PerformanceAdvisory.LOG.error("Unable to initialize NativeIO libraries", t);
+         }
+       }
+     }
+@@ -829,7 +829,7 @@ public static boolean access(String path, AccessRight desiredAccess)
+         // This can happen if the user has an older version of libhadoop.so
+         // installed - in this case we can continue without native IO
+         // after warning
+-        PerformanceAdvisory.LOG.debug("Unable to initialize NativeIO libraries", t);
++        PerformanceAdvisory.LOG.error("Unable to initialize NativeIO libraries", t);
+       }
+     }
+   }
+diff --git a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java
+index a8a380e..994bf1b 100644
+--- a/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java
++++ b/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/NativeCodeLoader.java
+@@ -49,15 +49,13 @@
+       nativeCodeLoaded = true;
+     } catch (Throwable t) {
+       // Ignore failure to load
+-      if(LOG.isDebugEnabled()) {
+-        LOG.debug("Failed to load native-hadoop with error: " + t);
+-        LOG.debug("java.library.path=" +
+-            System.getProperty("java.library.path"));
+-      }
++      LOG.error("Failed to load native-hadoop with error: " + t);
++      LOG.error("java.library.path=" +
++          System.getProperty("java.library.path"));
+     }
+     
+     if (!nativeCodeLoaded) {
+-      LOG.warn("Unable to load native-hadoop library for your platform... " +
++      LOG.error("Unable to load native-hadoop library for your platform... " +
+                "using builtin-java classes where applicable");
+     }
+   }
